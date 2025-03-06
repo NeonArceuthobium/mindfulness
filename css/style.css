@@ -68,7 +68,7 @@ body {
 }
 
 .bento-item {
-  background: rgba(0, 61, 255, 0.2); /* Transparent White */
+  background: #0e006ca8; /* Dark blue with transparency */
   border-radius: 1rem;
   padding: 1.5rem;
   display: flex;
