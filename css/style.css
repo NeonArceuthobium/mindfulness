@@ -117,6 +117,10 @@ a {
   color: white;
 }
 
+.feature-2 time {
+  display: block;
+}
+
 .feature-4:hover {
  background: #e682e6a8; 
  
