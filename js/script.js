@@ -373,4 +373,19 @@ const rippleSettings = {
   // Re-run `theClockApp` every 1 second (1000 ms)
   setInterval(theClockApp, 1000);
   
-  
+
+
+// Streak of Days Library
+// https://codepen.io/manikoth/pen/QwLYoKr.js
+
+// Unit Test
+const startDate = "1995-03-9";
+const daysWithoutBernays = getDayStreak(startDate);
+console.log( daysWithoutBernays );
+
+// Get HTML element
+const elem = document.querySelector('.streakOfDays');
+
+// Set to HTML element
+elem.textContent = daysWithoutBernays;
+elem.setAttribute("datetime", daysWithoutBernays );  
