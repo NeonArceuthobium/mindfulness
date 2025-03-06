@@ -1,7 +1,7 @@
 // don't forget to double check JS Babel from the codepen settings
 
 const rippleSettings = {
-    maxSize: 200,
+    maxSize: 100,
     animationSpeed: 1,
     strokeColor: [255, 255, 255],
   };
