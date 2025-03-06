@@ -12,4 +12,4 @@
 * [Font Share](https://www.fontshare.com/)
 * [Water Ripples](https://codepen.io/dpdknl/pen/LLLmre)
 * [Chat GPT](https://chatgpt.com/)
-
+* The Cherry Blossom effect was made in cooperation with chatGPT to update the raining code from a parallax project I'm working on. Frosted Glass CSS came from chatGPT as well.
