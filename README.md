@@ -16,5 +16,6 @@
 ## Citations
 * [Normalize CSS](https://necolas.github.io/normalize.css/)
 * [Font Share](https://www.fontshare.com/)
-
+* [Water Ripples](https://codepen.io/dpdknl/pen/LLLmre)
+* [Chat GPT](https://chatgpt.com/)
 

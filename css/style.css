@@ -1,11 +1,159 @@
-/* Diagnostic Styling */
-* {
-  outline: 2px dotted gray;
-} 
-
-
-/* temp background color */
+html,
+body,
+#canvas {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
 body {
-    background: peachpuff;
+  background-color: #26b4f4;
+}
+#wrapper {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#menu {
+  width: 100%;
+}
+#canvas {
+  z-index: -2;
+}
+
+.frosted-glass {
+  background: rgba(255, 255, 255, 0.2); /* Transparent White */
+  backdrop-filter: blur(10px); /* The blur creates the frosted effect */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  border-radius: 15px; /* Soft rounded corners */
+  padding: 20px; /* Spacing inside */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  color: white; /* Text color for contrast */
+  width: 300px;
+  text-align: center;
+}
+
+/* #fred {
+  width: 50vw;
+  height: 20vh;
+  z-index: 1; 
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+} */
+
+/* Your Awesome Styling Goes Here */
+
+.bento-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1rem;
+  width: 90%;
+  max-width: 1200px;
+  aspect-ratio: 16/9;
+  padding: 1rem;
+  border-radius: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.bento-item {
+  background: rgba(0, 61, 255, 0.2); /* Transparent White */
+  border-radius: 1rem;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.25rem;
+
+  transition: all 0.3s ease;
+  cursor: pointer;
+
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  color: white; /* Text color for contrast */
+}
+
+/* .bento-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-color: #e0e0e0;
+} */
+
+/* Featured items */
+.feature-1 { 
+/* quote of the day */
+  grid-column: span 3;
+  grid-row: span 1;
+
+}
+
+.feature-2 {
+  grid-column: span 2;
+
+}
+
+.feature-3 {
+  grid-row: span 2;
+
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .bento-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    aspect-ratio: auto;
   }
-  
+
+  .feature-1,
+  .feature-2,
+  .feature-3 {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .bento-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* SVG container with fixed pixel dimensions (set dynamically) */
+.rain {
+  position: absolute;
+  /* Initially set to some default; it will be updated on page load/resize */
+  width: 100vw;
+  height: 100vh;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+  z-index: -1;
+}
+
+/* Overlay & Lightning (covering the whole viewport) */
+.rain-overlay,
+.lightning-flash {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.lightning-flash {
+  background: none;
+  opacity: 0;
+  pointer-events: none;
+}

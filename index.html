@@ -10,57 +10,62 @@
     <link rel="apple-touch-icon" href="favicons/apple-touch-icon.png">
 
     <!-- Stylsheets -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="css/bentoLayout.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> -->
+
     <link rel="stylesheet" href="css/style.css">
 
     <!-- Scripts -->
-    <script src="js/clock.js" defer></script>
-    <script src="js/date.js" defer></script>
-    <script src="js/streakOfDays.js" defer></script>
-    <script src="js/daysTillEvent.js" defer></script>
-    <script src="js/calculateAgeOf.js" defer ></script>
-    <script src="js/script.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.6.2/dat.gui.min.js"></script>
+<script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
 
-    <title>Mindful Dashboard Template</title>
+    <title>Cherry Blossom Zen Tracker</title>
 </head>
 <body>
     
-    <main class="bento-container">
+  <canvas id="canvas"></canvas>
+  <div id="wrapper">
+  
+    <div class="frosted-glass bento-container" id="fred">
+  
+      <div class="bento-item feature-1">Feature 1</div>
+      <div class="bento-item feature-2">
+        <time datetime="">
+          <data class="hours"></data> :
+          <data class="minutes"></data> :
+          <data class="seconds"></data>
+          <data class="amOrPM"></data>
+        </time>
+      </div>
+      <div class="bento-item feature-3">Feature 3</div>
+      <div class="bento-item abox1">A Box</div>
+      <div class="bento-item">A Box</div>
+      <div class="bento-item feature-4">Jeff</div>
+  
+    </div>
+  
+    <!-- Hidden Cherry Blossom Template -->
+    <svg id="cherryBlossomTemplate" style="display: none;">
+      <g class="cherryBlossom">
+        <!-- Your cherry blossom paths go here -->
+        <path d="M43.596 39.929L33.874 1.39199C33.874 1.39199 9.80799 -7.14201 11.319 18.055L43.596 39.929Z" fill="#D95CA2" />
+        <path d="M44.534 36.803L4.87899 34.14C4.87899 34.14 -10.674 54.391 13.756 60.74L44.534 36.803Z" fill="#D95CA2" />
+        <path d="M41.851 34.944L27.065 71.835C27.065 71.835 41.519 92.885 55.106 71.612L41.851 34.944Z" fill="#D95CA2" />
+        <path d="M39.255 36.922L69.771 62.385C69.771 62.385 94.257 55.144 78.224 35.647L39.255 36.922Z" fill="#D95CA2" />
+        <path d="M40.333 40.002L73.98 18.848C73.98 18.848 74.66 -6.677 51.163 2.546L40.333 40.002Z" fill="#D95CA2" />
+        <path d="M41.834 49.2C48.2626 49.2 53.474 43.9886 53.474 37.56C53.474 31.1314 48.2626 25.92 41.834 25.92C35.4054 25.92 30.194 31.1314 30.194 37.56C30.194 43.9886 35.4054 49.2 41.834 49.2Z" fill="#F89952" />
+      </g>
+    </svg>
+  
+    <!-- SVG container with fixed dimensions -->
+    <svg class="rain" style="overflow: visible;">
+      <!-- Cherry blossoms will be dynamically added here -->
+    </svg>
+    <div class="rain-overlay"></div>
+    <div class="lightning-flash"></div>
+  </div>
 
-        <!-- Time Clock-->
-        <section class="bento-item feature-1" role="region" aria-label="Time">
-          <time datetime="HH:MM:SS" class="time">
-            <span class="hours">HH</span>:
-            <span class="minutes">MM</span>:
-            <span class="seconds">SS</span>
-            <span class="amOrPm">AM/PM</span>
-          </time>
-        </section>
-      
-        <!-- Date -->
-        <section class="bento-item feature-3" role="region" aria-label="dashboard widget">
-          <time datetime="MM-DD-YY" class="date">
-            <span class="month">January</span>
-            <span class="dayOfMonth">29</span>,
-            <span class="year">2024</span> -
-            <span class="dayOfWeek">Monday</span>
-          </time>
-        </section>
-      
-        <!-- Days Until...-->
-        <section class="bento-item" role="region" aria-label="dashboard widget">
-          <p>Days until an Event: <time datetime="" class="daysUntilEvent">000</time></p>
-        </section>
-      
-        <section class="bento-item feature-2" role="region" aria-label="dashboard widget">
-          <p>Days of streaks: <time datetime="" class="streakOfDays">000</time></p>
-        </section>
-      
-        <section class="bento-item" role="region" aria-label="dashboard widget">
-          <p>Age of Person: <time datetime="" class="ageOfPerson">000</time></p>
-        </section>
-      </main>
+  <script src="js/script.js" defer></script>
 
 </body>
+
 </html>
