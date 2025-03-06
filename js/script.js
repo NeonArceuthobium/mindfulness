@@ -1,9 +1,9 @@
 // don't forget to double check JS Babel from the codepen settings
 
 const rippleSettings = {
-    maxSize: 100,
+    maxSize: 200,
     animationSpeed: 1,
-    strokeColor: [181, 217, 255],
+    strokeColor: [255, 255, 255],
   };
   
   const canvasSettings = {
