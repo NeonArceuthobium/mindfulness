@@ -107,7 +107,7 @@ body {
   grid-column: span 2;
 }
 
-.feature-4 {
+.feature-4, .feature-music {
   pointer-events:  auto;
 
 }
@@ -121,6 +121,11 @@ a {
  background: #e682e6a8; 
  
 }
+
+.feature-music:hover {
+  background: #e682e6a8; 
+}
+
 
 /* Responsive adjustments */
 @media (max-width: 768px) {

@@ -389,3 +389,17 @@ const elem = document.querySelector('.streakOfDays');
 // Set to HTML element
 elem.textContent = daysWithoutBernays;
 elem.setAttribute("datetime", daysWithoutBernays );  
+
+//BGM
+
+document.querySelector('.feature-music').addEventListener('click', function() {
+  const audio = document.getElementById('bgAudio');
+  
+  if (audio.paused) {
+    audio.play();
+    this.textContent = 'BGM: On';
+  } else {
+    audio.pause();
+    this.textContent = 'BGM: Off';
+  }
+});
