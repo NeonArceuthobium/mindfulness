@@ -86,7 +86,7 @@ const rippleSettings = {
     });
   };
   
-  addGuiSettings();
+  //addGuiSettings();
   
   // Function which is executed on mouse hover on canvas
   const canvasMouseOver = (e) => {
