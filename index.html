@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicons -->
+    <link rel="icon" href="favicons/favicon.ico" sizes="32x32">
+    <link rel="icon" href="favicons/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="favicons/apple-touch-icon.png">
+
+    <!-- Stylsheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/bentoLayout.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Scripts -->
+    <script src="js/clock.js" defer></script>
+    <script src="js/date.js" defer></script>
+    <script src="js/streakOfDays.js" defer></script>
+    <script src="js/daysTillEvent.js" defer></script>
+    <script src="js/calculateAgeOf.js" defer ></script>
+    <script src="js/script.js" defer></script>
+
+    <title>Mindful Dashboard Template</title>
+</head>
+<body>
+    
+    <main class="bento-container">
+
+        <!-- Time Clock-->
+        <section class="bento-item feature-1" role="region" aria-label="Time">
+          <time datetime="HH:MM:SS" class="time">
+            <span class="hours">HH</span>:
+            <span class="minutes">MM</span>:
+            <span class="seconds">SS</span>
+            <span class="amOrPm">AM/PM</span>
+          </time>
+        </section>
+      
+        <!-- Date -->
+        <section class="bento-item feature-3" role="region" aria-label="dashboard widget">
+          <time datetime="MM-DD-YY" class="date">
+            <span class="month">January</span>
+            <span class="dayOfMonth">29</span>,
+            <span class="year">2024</span> -
+            <span class="dayOfWeek">Monday</span>
+          </time>
+        </section>
+      
+        <!-- Days Until...-->
+        <section class="bento-item" role="region" aria-label="dashboard widget">
+          <p>Days until an Event: <time datetime="" class="daysUntilEvent">000</time></p>
+        </section>
+      
+        <section class="bento-item feature-2" role="region" aria-label="dashboard widget">
+          <p>Days of streaks: <time datetime="" class="streakOfDays">000</time></p>
+        </section>
+      
+        <section class="bento-item" role="region" aria-label="dashboard widget">
+          <p>Age of Person: <time datetime="" class="ageOfPerson">000</time></p>
+        </section>
+      </main>
+
+</body>
+</html>

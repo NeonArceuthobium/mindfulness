@@ -1,0 +1,86 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    /*  center vertically and horizontally  */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .bento-container {
+    background: #ccc;
+    width: 90%;
+    max-width: 1200px;
+    padding: 1rem;
+  
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1rem;
+  
+    /* optional. fixed aspect ratio   */
+    /*   aspect-ratio: 16/9; */
+  }
+  
+  .bento-item {
+    background: gray;
+    padding: 1rem;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    /* ui to indicate interaction */
+    cursor: pointer;
+  }
+  
+  .bento-item:hover {
+    background: orange;
+  }
+  
+  /* Featured items */
+  .feature-1 {
+    grid-column: span 1;
+    grid-row: span 1;
+    background: #fdf2f8;
+  }
+  
+  .feature-2 {
+    grid-column: span 1;
+    background: #f0fdf4;
+  }
+  
+  .feature-3 {
+    grid-row: span 1;
+    background: #eff6ff;
+  }
+  
+  /* Responsive "tablet" size */
+  @media (max-width: 768px) {
+    .bento-container {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto;
+      aspect-ratio: auto;
+    }
+  
+    .feature-1,
+    .feature-2,
+    .feature-3 {
+      grid-column: span 1;
+      grid-row: span 1;
+    }
+  }
+  
+  /* Responsive "mobile" size */
+  @media (max-width: 480px) {
+    .bento-container {
+      grid-template-columns: 1fr;
+    }
+  }
+  
