@@ -281,7 +281,7 @@ const rippleSettings = {
     "It could be some form of lexical degradation, unfortunately a more erudite expression escaped me.",
     "The problem is that reality, by default, does not validate benevolent ontological magic space cancer. It barely validates regular cancer.",
     "Human and hubris are damn near the same word.",
-  "They're internal organs are, how we say,  cosmetic.",
+  "Their internal organs are, how we say,  cosmetic.",
     "A suprisingly profitable dojo for orphans"
   ];
   let max = quoteLibrary.length;
