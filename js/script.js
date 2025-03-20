@@ -282,7 +282,8 @@ const rippleSettings = {
     "The problem is that reality, by default, does not validate benevolent ontological magic space cancer. It barely validates regular cancer.",
     "Human and hubris are damn near the same word.",
   "Their internal organs are, how we say,  cosmetic.",
-    "A suprisingly profitable dojo for orphans"
+    "A suprisingly profitable dojo for orphans",
+    "I'm like the Paul Atreides of Cheese"
   ];
   let max = quoteLibrary.length;
   console.log(Math.floor(Math.random() * max));
