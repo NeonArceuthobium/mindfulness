@@ -11,6 +11,7 @@ body,
 }
 body {
   background-color: #26b4f4;
+  
 }
 #wrapper {
   position: absolute;
@@ -75,7 +76,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.25rem;
+  font-size: 2rem;
 
   transition: all 0.3s ease;
   cursor: pointer;
